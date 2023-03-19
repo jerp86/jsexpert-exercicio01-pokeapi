@@ -6,6 +6,7 @@ const urls = {
 };
 
 const mocks = {
+  get: require('./valid-get.json'),
   pokemonList: require('./valid-pokemon-list.json'),
   pokemon1: require('./valid-pokemon-1.json'),
   pokemon2: require('./valid-pokemon-2.json'),
