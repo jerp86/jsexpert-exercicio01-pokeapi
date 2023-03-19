@@ -2,7 +2,7 @@ const { expect } = require('chai')
 const { describe, it, beforeEach, afterEach } = require('mocha')
 const sinon = require('sinon')
 const PokemonRepository = require('../../src/repository/pokemonRepository')
-const { mocks, urls } = require('../mocks/repository')
+const { mocks } = require('../mocks/repository')
 
 describe('Pokémon Repository Test Suite', () => {
   let repository, sandbox;
@@ -10,7 +10,6 @@ describe('Pokémon Repository Test Suite', () => {
   beforeEach(() => {
     repository = new PokemonRepository()
     sandbox = sinon.createSandbox()
-    // sandbox.stub(repository, 'getById').throws()
   })
 
   afterEach(() => sandbox.restore())
