@@ -15,10 +15,8 @@ class PokemonRepository {
   }
 
   async getById(id) {
-    console.log("🚀 ~ file: pokemonRepository.js:18 ~ PokemonRepository ~ getById ~ id:", id)
     const idIsEmpty = !id || id?.length === 0
     const idIsNan = isNaN(id)
-    console.log("🚀 ~ file: pokemonRepository.js:20 ~ PokemonRepository ~ getById ~ idIsNan:", idIsNan)
     if (idIsEmpty || idIsNan) {
       throw new Error('Hey, I need ID to search anywhere Pokémon')
     }
